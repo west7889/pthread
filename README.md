@@ -88,13 +88,14 @@ Identify why this program is now doing right.
 Se evidencia que se corrige el problema del código anterior (3s-02.c) estableciendo exclusión mutua para el acceso al segmento de código que realiza el conteo y actualiza el valor de la variable count.
 Include the code sentences used to estimate how much time takes to each thread to count the number of 3s in a segment of the full array.
 Se ejecutó el programa con 8 hilos, los tiempos de cada hilo fueron:
-Thread [0] Elapsed time 89.183998 
-Thread [2] Elapsed time 181.450989 
-Thread [4] Elapsed time 277.765015 
-Thread [5] Elapsed time 370.915009 
-Thread [6] Elapsed time 467.828003 
-Thread [7] Elapsed time 565.072021 
-Thread [1] Elapsed time 654.521973 
+
+Thread [0] Elapsed time 89.183998
+Thread [2] Elapsed time 181.450989
+Thread [4] Elapsed time 277.765015
+Thread [5] Elapsed time 370.915009
+Thread [6] Elapsed time 467.828003
+Thread [7] Elapsed time 565.072021
+Thread [1] Elapsed time 654.521973
 Thread [3] Elapsed time 720.934998
 
 How much time took to obtain the total count of 3s in the whole array.
@@ -112,16 +113,23 @@ Se diferencian en que el programa  3s-03.c realiza la exclusión mutua en el seg
 Compare elapsed time per thread during the counting process and the total time that all threads took for counting the number of 3s in the whole array. Run every program (3s-03 and 3s-04) three times and compute the average time per program. Present your results and explain them.	
 
 Estos datos fueron obtenidos al ejecutar el programa con 8 hilos.
+
 Programa-Ejecución-Tiempo
+
 3s-03-1-717.578003
+
 3s-03-2-727.191956
+
 3s-03-3-709.753967
 
 Promedio 718,174642
 
 Programa-Ejecución-Tiempo
+
 3s-04-1-10695.166992
+
 3s-04-2-11139.542969
+
 3s-04-3-11294.889648 
 
 Promedio 10917,3549805
@@ -142,8 +150,11 @@ El éxito de esta implementacion es en tener una variable privada para cada hilo
 Compare this program execution and compare its performance with previous instances and write your observations.
 Estos datos fueron obtenidos al ejecutar el programa con 8 hilos.
 Programa-Ejecución-Tiempo
+
 3s-05-1-1542.734009 
+
 3s-05-2-1528.167969 
+
 3s-05-3-1532.466064
 
 Promedio 1532,466064
@@ -165,28 +176,35 @@ En la realización de esta actividad, encontré que la ejecución del programa p
 A continuación se muestran los tiempos de procesamiento de cada hilo para la ejecución con uno, dos, cuatro y ocho hilos.
 
 1 Hilo.
+
 Thread [0] Elapsed time 702.690002
+
 El tiempo final de esta ejecución fue de 702.991028 
-2 Hilos
+2 Hilos.
+
 Thread [0] Elapsed time 728.557983
 Thread [1] Elapsed time 730.556030 
+
 El tiempo final de esta ejecución fue de 730.902039 
 4 Hilos.
+
 Thread [0] Elapsed time 726.953979
 Thread [3] Elapsed time 721.256958
 Thread [1] Elapsed time 801.232971
 Thread [2] Elapsed time 827.144043
+
 El tiempo final de esta ejecución fue de  827.795044
 8 Hilos.
-Thread [1] Elapsed time 343.239014 
-Thread [4] Elapsed time 601.558044 
-Thread [0] Elapsed time 742.717957 
 
-Thread [7] Elapsed time 720.023987 
-Thread [6] Elapsed time 752.419006 
+Thread [1] Elapsed time 343.239014
+Thread [4] Elapsed time 601.558044
+Thread [0] Elapsed time 742.717957
+Thread [7] Elapsed time 720.023987
+Thread [6] Elapsed time 752.419006
 Thread [2] Elapsed time 804.431030
-Thread [5] Elapsed time 786.660034 
+Thread [5] Elapsed time 786.660034
 Thread [3] Elapsed time 807.929993
+
 El tiempo final de esta ejecución fue de 820.671997
 
 Con estos datos podemos observar que en la ejecución del programa con un sólo hilo tiene un tiempo de ejecución similar al que tomó el programa secuencial (3s-00.c), al ir incrementando el numero de hilos, no se observa una disminución en la ejecución de cada hilo, es decir que al incrementar los hilos se empieza a observar que cada uno tarda un tiempo similar a la ejecución secuencial, aún cuando el numero de registros que valida es menor.
@@ -195,8 +213,11 @@ Las siguientes son cifras obtenidas estableciendo un tamaño del vector de 10000
 
 Estos son los datos obtenidos al ejecutarlo con 8 hilos y una linea de caché de 64 bytes.
 Programa-Ejecución-Tiempo
+
 3s-06-1-882.022034 
+
 3s-06-2-857.138000
+
 3s-06-3-862.338013
 
 Promedio 859,7380065
@@ -204,15 +225,23 @@ Promedio 859,7380065
 Estos son los datos obtenidos al ejecutar el programa con 1, 2, 4 y 8 hilos y una linea de cache de 64 bytes.
 
 Programa-Hilos-Tiempo
+
 3s-06-1-701.317017 
+
 3s-06-2-718.994995 
+
 3s-06-4-996.760010
+
 3s-06-8-986.011047 
 
 Estos son los datos obtenidos al ejecutar el programa con 1, 2, 4 y 8 hilos y una linea de cache de 128 bytes (padding[124]).
 
 Programa-Hilos-Tiempo
+
 3s-06-1-691.874023
+
 3s-06-2-738.915955
+
 3s-06-4-999.347961 
+
 3s-06-8-1014.145996
