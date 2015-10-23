@@ -40,7 +40,7 @@ Count in the initialized vector the number of 3s in it.
 Add the proper code sentences that allow you to determine how much time the program spends during:
 Vector initialization.
 
-Se reduce el valor en la variable global VECTOR_SIZE, pues con el valor inicial de 100000000000 mi máquina se colgó en memoria (máquina de 4 GB de memoria), por lo que se reduje el valor a 100000000 obteniendo una rápida respuesta.
+Se reduce el valor en la variable global VECTOR_SIZE, pues con el valor inicial de 100000000000 mi máquina se colgó en memoria (máquina de 4 GB de memoria), por lo que reduje el valor a 100000000 obteniendo una rápida respuesta.
 Counting the number of 3s in a given vector.
 Los resultados para la primera ejecución son: para la variable count que es donde se almacena la información de los 3s que se están encontrando en el arreglo es 5001928 y para double_count es 5001928, esta variable permite controlar el resultado, pues en ella se almacena el numero de 3s que se ingresan en el vector al momento de inicializarlo, el tiempo de ejecución fue de  730.937012 . Para una siguiente ejecución es count es 5000688 y double_count es 5000688, estos valores diferentes entre una ejecución y otra se dan porque en la inicialización del vector, los valores que se registran se generan de forma aleatoria, el tiempo de ejecución fue de 731.576965. 
 
